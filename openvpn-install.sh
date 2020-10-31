@@ -3,7 +3,7 @@
 # https://github.com/Nyr/openvpn-install
 #
 # Copyright (c) 2013 Nyr. Released under the MIT License.
-
+# here is my code
 
 # Detect Debian users running the script with "sh" instead of bash
 if readlink /proc/$$/exe | grep -q "dash"; then
@@ -267,6 +267,7 @@ cert server.crt
 key server.key
 dh dh.pem
 auth SHA512
+duplicate-cn
 tls-crypt tc.key
 topology subnet
 server 10.8.0.0 255.255.255.0" > /etc/openvpn/server/server.conf
